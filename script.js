@@ -14,4 +14,3 @@ function showSection(sectionId) {
         sectionToShow.classList.add('active');
     }
 }
-//totti
