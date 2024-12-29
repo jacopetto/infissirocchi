@@ -1,0 +1,70 @@
+/* 1. Barra di navigazione (header) */
+header {
+    background-color: #000000;  /* Colore di sfondo della barra di navigazione */
+    color: white;  /* Colore del testo (dei link) nella barra di navigazione */
+    padding: 50px 50px;  /* Aggiunge spazio interno (margine) alla barra di navigazione */
+    display: flex;  /* Usa il layout flex per disporre il logo e i pulsanti */
+    align-items: center;  /* Allinea verticalmente il contenuto (logo e menu) */
+    justify-content: center;  /* Spazia uniformemente il logo e i pulsanti a destra e sinistra */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Aggiunge una leggera ombra alla barra di navigazione */
+    position: sticky;  /* Fissa la barra in cima alla pagina quando si scorre */
+    top: 20px;  /* Fissa la barra in alto */
+    z-index: 1000;  /* Assicura che la barra rimanga sopra altri contenuti */
+}
+
+/* 2. Menu di navigazione (nav ul) */
+nav ul {
+    list-style-type: none;  /* Rimuove i pallini o numeri dai link nel menu */
+    margin: 0;  /* Rimuove il margine predefinito */
+    padding: 0;  /* Rimuove il padding di default */
+    display: flex;  /* Usa un layout flex per i link del menu (posizionarli orizzontalmente) */
+    align-items: center;  /* Allinea verticalmente i link nel menu */
+    gap: 20px;  /* Spazio tra i link nel menu */
+}
+
+/* 3. Elementi del menu (nav ul li) */
+nav ul li {
+    display: inline;  /* Imposta i link come elementi in linea, li mantiene orizzontali */
+}
+
+/* 4. Stile dei link nel menu (nav ul li a) */
+nav ul li a {
+    text-decoration: none;  /* Rimuove la sottolineatura dai link */
+    color: white; /* Colore del testo dei link nel menu */
+    font-weight: bold;  /* Rende il testo dei link più audace */
+    padding: 10px 15px;  /* Distanza interna ai pulsanti per renderli più facili da cliccare */
+    transition: color 0.3s, background-color 0.3s;  /* Aggiunge un effetto di transizione per quando il mouse passa sopra i link */
+}
+
+/* 5. Cambia colore e sfondo quando si passa sopra un link (hover) */
+nav ul li a:hover {
+    color: #000000;  /* Colore del testo quando il mouse è sopra il link */
+    background-color: white;  /* Colore di sfondo del link quando il mouse è sopra */
+}
+
+/* 6. Stili generali del corpo della pagina (body) */
+body {
+    font-family: Arial, sans-serif;  /* Imposta il font principale della pagina */
+    margin: 0;  /* Rimuove il margine predefinito del browser */
+    padding: 0;  /* Rimuove il padding predefinito del browser */
+}
+
+/* 7. Sezioni della pagina (section) */
+section {
+    display: none;  /* Nasconde tutte le sezioni della pagina di default */
+    padding: 50px;  /* Aggiunge spazio interno nelle sezioni */
+    text-align: center;  /* Centra il testo nelle sezioni */
+}
+
+/* 8. Sezione attiva (quando viene aggiunta la classe "active") */
+section.active {
+    display: block;  /* Mostra la sezione attiva */
+}
+
+/* 9. Stili per il footer (piè di pagina) */
+footer {
+    text-align: center;  /* Centra il testo nel footer */
+    padding: 10px;  /* Aggiunge spazio interno al footer */
+    background-color: #333;  /* Colore di sfondo del footer */
+    color: rgb(255, 255, 255);  /* Colore del testo nel footer */
+}
