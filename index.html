@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocchi Infissi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header con il menu di navigazione -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">Chi Siamo</a></li>
+                <li><a href="#" onclick="showSection('lavori')">I nostri lavori</a></li>
+                <li><a href="#" onclick="showSection('preventivo')">Richiedi un preventivo</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contatti</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/people/Rocchi-Nello-e-figli-infissi-di-Catia-Rocchi/100054283880247/?mibextid=wwXIfr&rdid=CPne5h0Gk8ZT9Taj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GbwLdCx7M%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/393664864935" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/rocchiinfissi/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sezione Home -->
+    <section id="home" class="active">
+        <h1>Benvenuti da Rocchi Infissi</h1>
+        <h3>Da oltre 40 anni, qualità e innovazione per la tua casa e il tuo business</h3>
+        <h4>Fondata negli anni '80 come azienda specializzata nella lavorazione di infissi, verande, portoni e persiane, oggi siamo un 
+        punto di riferimento per l'installazione di soluzioni complete per la sicurezza, il comfort e l'estetica degli ambienti.</h4>
+        <h4>Offriamo una vasta gamma di prodotti di alta qualità, tra cui infissi, avvolgibili, portoni, grate, tende da sole, porte 
+        da interno, porte blindate, zanzariere e veneziane, con un'attenzione particolare al design, alla funzionalità e all'affidabilità.</h4>
+        <h3>La nostra esperienza, la tua sicurezza e comfort</h3>
+        <h4>Ci impegniamo a fornire soluzioni su misura per ogni esigenza, garantendo un servizio professionale, puntuale e di alta qualità.</h4>
+    </section>
+
+    <!-- Sezione Chi Siamo -->
+    <section id="about">
+            <h1>Benvenuti da Rocchi Infissi</h1>
+            <h3>Da oltre 40 anni, qualità e innovazione per la tua casa e il tuo business</h3>
+            <div class="hero-banner">    
+            </div>
+            <h4>Fondata negli anni '80 come azienda specializzata nella lavorazione di infissi, verande, portoni e persiane, oggi siamo un 
+            punto di riferimento per l'installazione di soluzioni complete per la sicurezza, il comfort e l'estetica degli ambienti.</h4>
+            <div class="hero-banner2">    
+            </div>
+            <h4>Offriamo una vasta gamma di prodotti di alta qualità, tra cui infissi, avvolgibili, portoni, grate, tende da sole, porte 
+            da interno, porte blindate, zanzariere e veneziane, con un'attenzione particolare al design, alla funzionalità e all'affidabilità.</h4>
+            <div class="hero-banner3">    
+            </div>
+            <h3>La nostra esperienza, la tua sicurezza e comfort</h3>
+            <h4>Ci impegniamo a fornire soluzioni su misura per ogni esigenza, garantendo un servizio professionale, puntuale e di alta qualità.</h4>
+        </section>
+
+    <!-- Sezione I nostri lavori -->
+    <section id="lavori">
+        <h1>I Nostri Lavori</h1>
+        <ul style="text-align: left; display: inline-block;">
+            <li>Installazione di infissi in PVC e alluminio.</li>
+            <li>Riparazione e manutenzione.</li>
+            <li>Consulenza personalizzata.</li>
+            <li>Soluzioni di design per interni ed esterni.</li>
+        </ul>
+    </section>
+
+        <!-- Sezione Richiedi Un Preventivo -->
+        <section id="preventivo">
+            <h1>Richiedi un preventivo</h1>
+            <ul style="text-align: left; display: inline-block;">
+                <li>Installazione di infissi in PVC e alluminio.</li>
+                <li>Riparazione e manutenzione.</li>
+                <li>Consulenza personalizzata.</li>
+                <li>Soluzioni di design per interni ed esterni.</li>
+            </ul>
+        </section>
+
+    <!-- Sezione Contattaci -->
+    <section id="contact">
+        <h1>Contattaci</h1>
+        <form action="mailto:info@infissirocchi.it" method="post" enctype="text/plain">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Infissi Rocchi. Tutti i diritti riservati.</p>
+    </footer>
+    <script src="script.js"></script> <!-- Includi il JavaScript -->
+</body>
+</html>
