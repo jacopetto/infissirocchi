@@ -2,7 +2,7 @@
 header {
     background-color: #c19a6b;  /* Colore di sfondo della barra di navigazione */
     color: white;  /* Colore del testo (dei link) nella barra di navigazione */
-    padding: 50px 50px;  /* Aggiunge spazio interno (margine) alla barra di navigazione */
+    padding: 40px 40px;  /* Aggiunge spazio interno (margine) alla barra di navigazione */
     display: flex;  /* Usa il layout flex per disporre il logo e i pulsanti */
     align-items: center;  /* Allinea verticalmente il contenuto (logo e menu) */
     justify-content: center;  /* Spazia uniformemente il logo e i pulsanti a destra e sinistra */
@@ -93,26 +93,43 @@ footer {
 /* Chi siamo image 1 */
 .hero-banner {
     background-image: url('C:/Users/utente/Desktop/infissi-rocchi/images/sfondo.png'); /* Percorso dell'immagine */
-    background-size: 650px; /* Adatta l'immagine all'area */
+    background-size: 600px; /* Adatta l'immagine all'area */
     background-position: left; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
-    padding: 200px; /* Spazio interno per il contenuto */
+    padding: 70px; /* Spazio interno per il contenuto */
+}
+
+.hero-banner h2 {
+    margin: 50; /* Rimuovi il margine predefinito */
+    padding-left: 600px; /* Aggiungi spazio tra immagine e testo */
+    color: #333; /* Colore del testo */
 }
 
 /* Chi siamo image 2 */
 .hero-banner2 {
-    background-image: url('C:/Users/utente/Desktop/infissi-rocchi/images/sfondo1.png'); /* Percorso dell'immagine */
-    background-size: 650px; /* Adatta l'immagine all'area */
-    background-position: left; /* Centra l'immagine */
+    background-image: url('C:/Users/utente/Desktop/infissi-rocchi/images/lavori/tenda2.jpeg'); /* Percorso dell'immagine */
+    background-size: 600px; /* Adatta l'immagine all'area */
+    background-position: right; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
-    padding: 200px; /* Spazio interno per il contenuto */
+    padding: 30px; /* Spazio interno per il contenuto */
 }
 
+.hero-banner2 h2 {
+    margin: 50; /* Rimuovi il margine predefinito */
+    padding-right: 650px; /* Aggiungi spazio tra immagine e testo */
+    color: #333; /* Colore del testo */
+}
 /* Chi siamo image 3 */
 .hero-banner3 {
-    background-image: url('C:/Users/utente/Desktop/infissi-rocchi/images/sfondo2.png'); /* Percorso dell'immagine */
-    background-size: 650px; /* Adatta l'immagine all'area */
+    background-image: url('C:/Users/utente/Desktop/infissi-rocchi/images/lavori/finestra5.jpeg'); /* Percorso dell'immagine */
+    background-size: 500px; /* Adatta l'immagine all'area */
     background-position: left; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
-    padding: 200px; /* Spazio interno per il contenuto */
+    padding: 100px; /* Spazio interno per il contenuto */
+}
+
+.hero-banner3 h2 {
+    margin: 50; /* Rimuovi il margine predefinito */
+    padding-left: 550px; /* Aggiungi spazio tra immagine e testo */
+    color: #333; /* Colore del testo */
 }
