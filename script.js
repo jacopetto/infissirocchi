@@ -14,3 +14,29 @@ function showSection(sectionId) {
         sectionToShow.classList.add('active');
     }
 }
+
+
+// Carosello immagini I Nostri Lavori
+const carousel = document.querySelector('.carousel');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+let currentIndex = 0;
+
+function updateCarousel() {
+  const imageWidth = carousel.querySelector('img').clientWidth;
+  const offset = -currentIndex * (imageWidth); // Calcola l'offset
+  carousel.style.transform = `translateX(${offset}px)`; // Sposta il carosello
+}
+
+nextBtn.addEventListener('click', () => {
+  const totalImages = carousel.querySelectorAll('img').length;
+  currentIndex = (currentIndex + 1) % totalImages; // Vai alla prossima immagine
+  updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+  const totalImages = carousel.querySelectorAll('img').length;
+  currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Torna alla precedente
+  updateCarousel();
+});

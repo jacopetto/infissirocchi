@@ -90,13 +90,24 @@ footer {
     color: rgb(255, 255, 255);  /* Colore del testo nel footer */
 }
 
-/* Chi siamo image 1 */
+                             /*   S    E    Z    I    O    N   E   -   C   H   I      S   I   A   M   O    */
+
+
+/* Barra orizzontale */
+.horizontal-bar {
+    width: 100%;
+    height: 14px; /* Altezza della barra */
+    background-color: #c19a6b; /* Colore della barra */
+    margin: 40px auto; /* Margine sopra e sotto */
+}                                          
+
+/* Image 1 */
 .hero-banner {
-    background-image: url('C:/Users/utente/Desktop/infissi-rocchi/images/sfondo.png'); /* Percorso dell'immagine */
-    background-size: 600px; /* Adatta l'immagine all'area */
+    background-image: url('C:/Users/utente/Desktop/infissi-rocchi/images/lavori/finestra7.jpeg'); /* Percorso dell'immagine */
+    background-size: 550px; /* Adatta l'immagine all'area */
     background-position: left; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
-    padding: 70px; /* Spazio interno per il contenuto */
+    padding: 100px; /* Spazio interno per il contenuto */
 }
 
 .hero-banner h2 {
@@ -105,7 +116,7 @@ footer {
     color: #333; /* Colore del testo */
 }
 
-/* Chi siamo image 2 */
+/* Image 2 */
 .hero-banner2 {
     background-image: url('C:/Users/utente/Desktop/infissi-rocchi/images/lavori/tenda2.jpeg'); /* Percorso dell'immagine */
     background-size: 600px; /* Adatta l'immagine all'area */
@@ -119,7 +130,7 @@ footer {
     padding-right: 650px; /* Aggiungi spazio tra immagine e testo */
     color: #333; /* Colore del testo */
 }
-/* Chi siamo image 3 */
+/* Image 3 */
 .hero-banner3 {
     background-image: url('C:/Users/utente/Desktop/infissi-rocchi/images/lavori/finestra5.jpeg'); /* Percorso dell'immagine */
     background-size: 500px; /* Adatta l'immagine all'area */
@@ -132,4 +143,61 @@ footer {
     margin: 50; /* Rimuovi il margine predefinito */
     padding-left: 550px; /* Aggiungi spazio tra immagine e testo */
     color: #333; /* Colore del testo */
+}
+
+
+                        /*   S    E    Z    I    O    N   E   -   I      N   O   S   T   R   I     L   A   V   O   R   I    */
+
+/* Contenitore principale del carousel */
+.carousel-container {
+    position: relative; /* Permette di posizionare i pulsanti (prev e next) in modo assoluto rispetto al contenitore */
+    max-width: 35%; /* Imposta la larghezza massima del carousel al % della pagina */
+    margin: 20px auto; /* Centro il contenitore orizzontalmente e aggiunge un margine verticale */
+    overflow: hidden; /* Nasconde le immagini che escono dai bordi del contenitore */
+    border: 0px solid #ddd; /* Aggiunge un bordo grigio per il design */
+    border-radius: 28px; /* Arrotonda gli angoli del contenitore */
+    height: 485px; /* Imposta un'altezza fissa per il carosello */
+}
+
+/* Contenitore delle immagini all'interno del carousel */
+.carousel {
+    display: flex; /* Dispone le immagini una accanto all'altra in fila orizzontale */
+    transition: transform 0.3s ease-in-out; /* Aggiunge un'animazione fluida per gli spostamenti del carousel */
+}
+
+/* Stile per le immagini all'interno del carousel */
+.carousel img {
+    flex-shrink: 0; /* Impedisce che le immagini si riducano più del necessario */
+    width: 100%; /* Ogni immagine occuperà il 100% della larghezza del contenitore */
+    height: 100%; /* Ogni immagine occuperà il 100% dell'altezza del contenitore */
+    object-fit: cover; /* L'immagine riempie lo spazio mantenendo le proporzioni */
+}
+
+/* Pulsanti di navigazione (freccia sinistra e destra) */
+.prev-btn, .next-btn {
+    position: absolute; /* Posiziona i pulsanti sopra il contenitore in punti specifici */
+    top: 50%; /* Centra verticalmente i pulsanti */
+    transform: translateY(-50%); /* Corregge l'allineamento verticale dei pulsanti */
+    background-color: rgba(0, 0, 0, 0.5); /* Colore di sfondo nero semitrasparente */
+    color: white; /* Colore del testo o dell'icona all'interno del pulsante */
+    border: none; /* Rimuove i bordi predefiniti del pulsante */
+    cursor: pointer; /* Cambia il cursore a una mano per indicare che il pulsante è cliccabile */
+    padding: 10px; /* Aggiunge un'area cliccabile intorno al contenuto del pulsante */
+    z-index: 10; /* Garantisce che i pulsanti rimangano sopra le immagini */
+    border-radius: 50%; /* Rende i pulsanti rotondi */
+}
+
+/* Pulsante sinistro (prev) */
+.prev-btn {
+    left: 10px; /* Posiziona il pulsante a sinistra rispetto al bordo del contenitore */
+}
+
+/* Pulsante destro (next) */
+.next-btn {
+    right: 10px; /* Posiziona il pulsante a destra rispetto al bordo del contenitore */
+}
+
+/* Effetto hover sui pulsanti di navigazione */
+.prev-btn:hover, .next-btn:hover {
+    background-color: #000; /* Cambia lo sfondo a nero pieno quando il mouse passa sopra il pulsante */
 }
