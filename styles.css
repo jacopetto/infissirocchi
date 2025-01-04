@@ -151,12 +151,13 @@ footer {
 /* Contenitore principale del carousel */
 .carousel-container {
     position: relative; /* Permette di posizionare i pulsanti (prev e next) in modo assoluto rispetto al contenitore */
-    max-width: 35%; /* Imposta la larghezza massima del carousel al % della pagina */
+    max-width: 35%; /* Imposta la larghezza massima del carousel al x% della pagina */
     margin: 20px auto; /* Centro il contenitore orizzontalmente e aggiunge un margine verticale */
     overflow: hidden; /* Nasconde le immagini che escono dai bordi del contenitore */
     border: 0px solid #ddd; /* Aggiunge un bordo grigio per il design */
     border-radius: 28px; /* Arrotonda gli angoli del contenitore */
     height: 485px; /* Imposta un'altezza fissa per il carosello */
+    width: 484px; /* Imposta una larghezza fissa per il carosello */
 }
 
 /* Contenitore delle immagini all'interno del carousel */
