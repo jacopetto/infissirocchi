@@ -268,3 +268,60 @@ footer {
     background-color: #000; /* Cambia lo sfondo a nero pieno quando il mouse passa sopra il pulsante */
 }
 
+                        /*   S    E    Z    I    O    N   E   -   P    R    E    V     E    N    T    I    V    O    */
+
+h1 {
+    margin-bottom: 4rem; /* Aumenta la distanza tra il titolo e il form */
+}
+                        
+form {
+    display: flex;
+    flex-wrap: wrap; /* Per gestire il layout su schermi più piccoli */
+    gap: 1rem; /* Spaziatura tra gli elementi */
+    text-align: center; /* Centra tutti gli elementi figli inline, incluso il pulsante */
+}
+
+form label {
+    font-weight: bold; /* Rende le etichette in grassetto */
+    display: inline-flex; /* Cambia il comportamento dell'etichetta */
+    align-items: center; /* Allinea verticalmente al centro */
+}
+
+form input, form textarea {
+    width: 80%; /* Imposta la larghezza degli input e della textarea */
+    padding: 0.5rem;
+    box-sizing: border-box; /* Per includere padding nei calcoli della larghezza */
+    margin-bottom: 1rem; /* Aggiunge distanza tra i campi e il successivo */
+}
+
+form input[type="text"],
+form input[type="text"],
+form input[type="email"] {
+    flex: 1; /* Gli input in alto si distribuiscono uniformemente */
+    width: 70%;
+}
+
+form label[for="message"] {
+    text-align: center; /* Centra il testo */
+    margin-bottom: 0.5rem; /* Spaziatura tra etichetta e box */
+    display: block; /* Etichetta sopra il box */
+    width: 100%; /* Centra rispetto al contenitore */
+}
+
+form textarea {
+    width: 100%; /* Campo più largo */
+    height: 300px; /* Campo più alto */
+    align-self: center; /* Centra il box orizzontalmente */
+}
+
+form button {
+    margin-top: 1rem; /* Spaziatura sopra il pulsante */
+    padding: 0.5rem 1rem;
+    display: block; /* Modifica in block per far sì che prenda tutta la larghezza disponibile */
+    margin-left: auto; /* Allinea a sinistra */
+    margin-right: auto; /* Allinea a destra */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Colore al passaggio del mouse */
+}

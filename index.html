@@ -123,29 +123,27 @@
         <!-- Sezione Richiedi Un Preventivo -->
         <section id="preventivo">
             <h1>Richiedi un preventivo</h1>
-            <ul style="text-align: left; display: inline-block;">
-                <li>Installazione di infissi in PVC e alluminio.</li>
-                <li>Riparazione e manutenzione.</li>
-                <li>Consulenza personalizzata.</li>
-                <li>Soluzioni di design per interni ed esterni.</li>
-            </ul>
+            <form action="mailto:info@infissirocchi.it" method="post" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="numero">Telefono:</label>
+                <input type="text" id="number" name="number" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Messaggio:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit">Invia</button>
+            </form>
         </section>
+      
 
     <!-- Sezione Contattaci -->
     <section id="contact">
-        <h1>Contattaci</h1>
-        <form action="mailto:info@infissirocchi.it" method="post" enctype="text/plain">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Messaggio:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Invia</button>
-        </form>
+        <h1>Contatti</h1>
     </section>
 
     <!-- Footer -->
