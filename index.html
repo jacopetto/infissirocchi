@@ -81,16 +81,16 @@
     <div class="carousel-container">
         <button class="prev-btn">&lt;</button>
         <div class="carousel">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/tenda.jpeg" alt="Lavoro 1">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/finestra2.jpeg" alt="Lavoro 2">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/finestra4.jpeg" alt="Lavoro 3">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/armadietto2.jpeg" alt="Lavoro 4">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/finestra9.jpeg" alt="Lavoro 5">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/finestra.jpeg" alt="Lavoro 6">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/armadietto.jpeg" alt="Lavoro 7">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/tenda3.jpeg" alt="Lavoro 8">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/persiane2.jpeg" alt="Lavoro 9">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/vetrata.jpeg" alt="Lavoro 10">
+            <img src="images/lavori/tenda.jpeg" alt="Lavoro 1">
+            <img src="images/lavori/finestra2.jpeg" alt="Lavoro 2">
+            <img src="images/lavori/finestra4.jpeg" alt="Lavoro 3">
+            <img src="images/lavori/armadietto2.jpeg" alt="Lavoro 4">
+            <img src="images/lavori/finestra9.jpeg" alt="Lavoro 5">
+            <img src="images/lavori/finestra.jpeg" alt="Lavoro 6">
+            <img src="images/lavori/armadietto.jpeg" alt="Lavoro 7">
+            <img src="images/lavori/tenda3.jpeg" alt="Lavoro 8">
+            <img src="images/lavori/persiane2.jpeg" alt="Lavoro 9">
+            <img src="images/lavori/vetrata.jpeg" alt="Lavoro 10">
         </div>
         <button class="next-btn">&gt;</button>
     </div>
@@ -98,15 +98,15 @@
     <div class="carousel-container2">
         <button class="prev-btn2">&lt;</button>
         <div class="carousel2">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/porta blindata.jpeg" alt="Lavoro 1">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/porta blindata2.jpeg" alt="Lavoro 2">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/porta grata.jpeg" alt="Lavoro 3">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/porta grata2.jpeg" alt="Lavoro 4">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/porta finestra.jpeg" alt="Lavoro 5">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/porta.jpeg" alt="Lavoro 6">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/porta2.jpeg" alt="Lavoro 7">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/porta3.jpeg" alt="Lavoro 8">
-            <img src="C:/Users/utente/Desktop/infissi-rocchi/images/lavori/porta4.jpeg" alt="Lavoro 9">
+            <img src="images/lavori/porta blindata.jpeg" alt="Lavoro 1">
+            <img src="images/lavori/porta blindata2.jpeg" alt="Lavoro 2">
+            <img src="images/lavori/porta grata.jpeg" alt="Lavoro 3">
+            <img src="images/lavori/porta grata2.jpeg" alt="Lavoro 4">
+            <img src="images/lavori/porta finestra.jpeg" alt="Lavoro 5">
+            <img src="images/lavori/porta.jpeg" alt="Lavoro 6">
+            <img src="images/lavori/porta2.jpeg" alt="Lavoro 7">
+            <img src="images/lavori/porta3.jpeg" alt="Lavoro 8">
+            <img src="images/lavori/porta4.jpeg" alt="Lavoro 9">
         </div>
         <button class="next-btn2">&gt;</button>
     </div>
@@ -123,22 +123,23 @@
         <!-- Sezione Richiedi Un Preventivo -->
         <section id="preventivo">
             <h1>Richiedi un preventivo</h1>
-            <form action="mailto:info@infissirocchi.it" method="post" enctype="text/plain">
+            <form action="send_email.php" method="POST">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
-
-                <label for="numero">Telefono:</label>
+            
+                <label for="number">Telefono:</label>
                 <input type="text" id="number" name="number" required>
-    
+            
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-    
+            
                 <label for="message">Messaggio:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-    
+                <textarea id="message" name="message" rows="5" required></textarea>  
+                
+                <!-- Aggiunta del bottone Invia -->
                 <button type="submit">Invia</button>
             </form>
-        </section>
+        </section>        
       
 
     <!-- Sezione Contattaci -->
