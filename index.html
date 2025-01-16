@@ -123,21 +123,18 @@
         <!-- Sezione Richiedi Un Preventivo -->
         <section id="preventivo">
             <h1>Richiedi un preventivo</h1>
-            <form action="mailto:info@infissirocchi.it" method="post" enctype="text/plain">
+            <form action="send_email.php" method="POST">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
-
-                <label for="numero">Telefono:</label>
+            
+                <label for="number">Telefono:</label>
                 <input type="text" id="number" name="number" required>
-    
+            
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-    
+            
                 <label for="message">Messaggio:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-    
-                <button type="submit">Invia</button>
-            </form>
+                <textarea id="message" name="message" rows="5" required></textarea>            
         </section>
       
 

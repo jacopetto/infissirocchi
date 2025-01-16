@@ -103,7 +103,7 @@ footer {
 
 /* Image 1 */
 .hero-banner {
-    background-image: url('C:/Users/utente/Desktop/infissi-rocchi/images/lavori/finestra7.jpeg'); /* Percorso dell'immagine */
+    background-image: url('images/lavori/finestra7.jpeg'); /* Percorso dell'immagine */
     background-size: 550px; /* Adatta l'immagine all'area */
     background-position: left; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
@@ -118,7 +118,7 @@ footer {
 
 /* Image 2 */
 .hero-banner2 {
-    background-image: url('C:/Users/utente/Desktop/infissi-rocchi/images/lavori/tenda2.jpeg'); /* Percorso dell'immagine */
+    background-image: url('images/lavori/tenda2.jpeg'); /* Percorso dell'immagine */
     background-size: 600px; /* Adatta l'immagine all'area */
     background-position: right; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
@@ -132,7 +132,7 @@ footer {
 }
 /* Image 3 */
 .hero-banner3 {
-    background-image: url('C:/Users/utente/Desktop/infissi-rocchi/images/lavori/finestra5.jpeg'); /* Percorso dell'immagine */
+    background-image: url('images/lavori/finestra5.jpeg'); /* Percorso dell'immagine */
     background-size: 500px; /* Adatta l'immagine all'area */
     background-position: left; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
