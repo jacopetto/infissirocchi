@@ -325,3 +325,95 @@ form button {
 form button:hover {
     background-color: #0056b3; /* Colore al passaggio del mouse */
 }
+
+
+                     /*   S    E    Z    I    O    N   E   -   C    O    N    T     A    T    T    I     */
+
+
+/* Stile per la sezione Contatti */
+#contact {
+    background-color: #f9f9f9; /* Sfondo chiaro */
+    padding: 60px 20px; /* Spaziatura interna più generosa */
+    text-align: center; /* Allinea il testo al centro */
+}
+
+/* Contenitore principale per la sezione Contatti */
+.contact-container {
+    max-width: 1200px; /* Larghezza massima per il contenitore */
+    margin: 0 auto; /* Centra il contenitore */
+    display: flex; /* Layout flessibile */
+    flex-wrap: wrap; /* Consente il wrapping su schermi più piccoli */
+    gap: 30px; /* Spazio tra gli elementi */
+    justify-content: center; /* Centra gli elementi */
+}
+
+/* Stile per il blocco delle informazioni di contatto */
+.contact-info {
+    flex: 1 1 400px; /* Occupa lo spazio disponibile con un minimo di 400px */
+    text-align: left; /* Allinea il testo a sinistra */
+}
+
+/* Stile per ogni singolo elemento di contatto */
+.contact-item {
+    display: flex; /* Layout flessibile per icone e testo */
+    align-items: center; /* Allinea verticalmente le icone e il testo */
+    margin-bottom: 20px; /* Spaziatura tra gli elementi */
+}
+
+/* Stile per le icone */
+.contact-item i {
+    font-size: 24px; /* Dimensione delle icone */
+    color: #c19a6b; /* Colore delle icone */
+    margin-right: 15px; /* Spazio tra icona e testo */
+}
+
+/* Stile per il testo degli elementi di contatto */
+.contact-item p {
+    margin: 0; /* Rimuove il margine predefinito */
+    font-size: 18px; /* Dimensione del testo */
+    color: #333; /* Colore del testo */
+}
+
+/* Stile per i link nei contatti */
+.contact-item a {
+    color: #c19a6b; /* Colore dei link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    transition: color 0.3s ease-in-out; /* Transizione per l'effetto hover */
+}
+
+.contact-item a:hover {
+    color: #000; /* Cambia colore al passaggio del mouse */
+}
+
+/* Stile per il blocco della mappa */
+.contact-map {
+    flex: 1 1 600px; /* Occupa lo spazio disponibile con un minimo di 600px */
+    height: 450px; /* Altezza fissa per la mappa */
+    max-width: 100%; /* Larghezza massima al 100% per adattarsi alla dimensione del contenitore */
+    border-radius: 10px; /* Angoli arrotondati */
+    overflow: hidden; /* Nasconde gli angoli sporgenti */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra più morbida */
+}
+
+/* Aggiunta di uno stile per rendere la sezione più responsiva */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Cambia l'orientamento a colonna su schermi più piccoli */
+        gap: 20px; /* Riduce lo spazio tra gli elementi */
+    }
+
+    .contact-map {
+        height: 300px; /* Riduce l'altezza della mappa su dispositivi mobili */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Per schermi ancora più piccoli, riduci la dimensione del testo */
+    .contact-item p {
+        font-size: 16px;
+    }
+
+    .contact-item i {
+        font-size: 20px;
+    }
+}
