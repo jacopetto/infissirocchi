@@ -28,44 +28,93 @@
     </header>
 
     <!-- Sezione Home -->
-    <section id="home" class="active">
-        
+    <section id="home">
+        <div class="home-container">
+            <h1>Benvenuti da Rocchi Infissi!</h1>
+
+            <img src="images/lavori/negozio.jpeg" alt="Immagine negozio" class="home-image">
+
+            <h2>Scopri cosa possiamo fare per te</h2>
+            
+            <div class="horizontal-bar"></div>
+            
+            <p>
+                Scopri di più su chi siamo e cosa facciamo, clicca sui bottoni qui sotto per navigare.
+            </p>
+            
+            <!-- Frase con bottone per la sezione Chi Siamo -->
+            <div class="home-cta">
+                <p>Vuoi sapere chi siamo?</p>
+                <a href="javascript:void(0);" class="cta-button" onclick="showSection('about')">Chi siamo</a>
+            </div>
+            
+            <!-- Frase con bottone per la sezione I Nostri Lavori -->
+            <div class="home-cta">
+                <p>Scopri i nostri lavori!</p>
+                <a href="javascript:void(0);" class="cta-button" onclick="showSection('lavori')">I nostri lavori</a>
+            </div>
+
+            <!-- Frase con bottone per la sezione Richiedi un preventivo -->
+            <div class="home-cta">
+                <p>Hai bisogno di un preventivo personalizzato?</p>
+                <a href="javascript:void(0);" class="cta-button" onclick="showSection('preventivo')">Richiedi un preventivo</a>
+            </div>
+ 
+            <!-- Frase con bottone per la sezione Contatti -->
+            <div class="home-cta">
+                <p>Hai domande? Contattaci!</p>
+                <a href="javascript:void(0);" class="cta-button" onclick="showSection('contact')">Contattaci</a>
+            </div>
+            
+        </div>
     </section>
+    
+
+
 
     <!-- Sezione Chi Siamo -->
     <section id="about">
-            <h1>Benvenuti da Rocchi Infissi</h1>
+        <div class="about-container">
+            <h1>Rocchi Infissi</h1>
             <h2>Da oltre 40 anni, qualità e innovazione per la tua casa e il tuo business.</h2>
             <div class="horizontal-bar"></div>
-            <div class="hero-banner"> 
-                <h2>Fondata negli anni '80 come azienda</h2>
-                <h2>specializzata nella lavorazione di</h2>
-                <h2>infissi, verande, portoni e persiane,</h2>
-                <h2>oggi siamo un punto di riferimento</h2>
-                <h2>per l'installazione di soluzioni</h2>
-                <h2>complete per la sicurezza, il comfort</h2>
-                <h2>e l'estetica degli ambienti.</h2> 
+    
+            <!-- Sezione 1 -->
+            <div class="about-section">
+                <div class="about-image">
+                    <img src="images/lavori/finestra7.jpeg" alt="Infissi di qualità">
+                </div>
+                <div class="about-text">
+                    <p>Fondata negli anni '80 come azienda specializzata nella lavorazione di infissi, verande, portoni e persiane, oggi siamo un punto di riferimento per l'installazione di soluzioni complete per la sicurezza, il comfort e l'estetica degli ambienti.</p>
+                </div>
             </div>
-            <div class="hero-banner2">
-                <h2>Offriamo una vasta gamma di prodotti di alta qualità</h2>
-                <h2>infissi, avvolgibili, portoni, grate,</h2> 
-                <h2>da sole, porte da interno, porte blindate,</h2> 
-                <h2>zanzariere e veneziane,</h2> 
-                <h2>con un'attenzione particolare al design,</h2>
-                <h2>alla funzionalità e all'affidabilità.</h2>  
+    
+            <!-- Sezione 2 -->
+            <div class="about-section reverse">
+                <div class="about-image">
+                    <img src="images/lavori/tenda2.jpeg" alt="Tende moderne">
+                </div>
+                <div class="about-text">
+                    <p>Offriamo una vasta gamma di prodotti di alta qualità: infissi, avvolgibili, portoni, grate, tende da sole, porte da interno, porte blindate, zanzariere e veneziane, con un'attenzione particolare al design, alla funzionalità e all'affidabilità.</p>
+                </div>
             </div>
-            <div class="hero-banner3">
-                <h2>La nostra esperienza, la tua sicurezza e comfort.</h2>
-                <h2>Il nostro obiettivo è offrirti soluzioni su misura che</h2>
-                <h2>rispondano alle tue specifiche esigenze,</h2>
-                <h2>trasformando ogni spazio in un ambiente sicuro,</h2>
-                <h2>accogliente e confortevole</h2>
-                <h2>Scegli Rocchi Infissi per dare valore alla tua casa</h2>
-                <h2>o al tuo business con prodotti innovativi e affidabili.</h2>
+    
+            <!-- Sezione 3 -->
+            <div class="about-section">
+                <div class="about-image">
+                    <img src="images/lavori/finestra5.jpeg" alt="Ambienti confortevoli">
+                </div>
+                <div class="about-text">
+                    <p>La nostra esperienza, la tua sicurezza e comfort. Il nostro obiettivo è offrirti soluzioni su misura che rispondano alle tue specifiche esigenze, trasformando ogni spazio in un ambiente sicuro, accogliente e confortevole. Scegli Rocchi Infissi per dare valore alla tua casa o al tuo business con prodotti innovativi e affidabili.</p>
+                </div>
             </div>
-            <div class="horizontal-bar2"></div>
-        <li>Vieni a trovarci in sede: Piazzale Enrico Dunant, 43, 00152 Roma o chiamaci al nostro numero: 065894849</li>
-        </section>
+    
+            <div class="horizontal-bar"></div>
+            <div class="cta-section">
+                <p>Vieni a trovarci in sede: <strong>Piazzale Enrico Dunant, 43, 00152 Roma</strong> o chiamaci al <strong>065894849</strong>.</p>
+            </div>
+        </div>
+    </section>
 
 <!-- Sezione I nostri lavori -->
 <section id="lavori">
@@ -143,7 +192,7 @@
         <div class="contact-info">
             <div class="contact-item">
                 <i class="fas fa-phone-alt"></i>
-                <p>Telefono: <a href="tel:065894849">06 589 4849</a></p>
+                <p>Telefono: <a href="tel:065894849">+39 06 589 4849</a></p>
             </div>
             <div class="contact-item">
                 <i class="fas fa-map-marker-alt"></i>
@@ -155,7 +204,7 @@
             </div>
             <div class="contact-item">
                 <i class="fab fa-whatsapp"></i>
-                <p>WhatsApp: <a href="https://wa.me/393664864935" target="_blank">366 486 4935</a></p>
+                <p>WhatsApp: <a href="https://wa.me/393664864935" target="_blank">+39 366 486 4935</a></p>
             </div>
         </div>
         <div class="contact-map">

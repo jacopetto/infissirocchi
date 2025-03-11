@@ -93,65 +93,99 @@ footer {
                              /*   S    E    Z    I    O    N   E   -   C   H   I      S   I   A   M   O    */
 
 
+/* Contenitore principale */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Titoli */
+.about-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-container h2 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
 /* Barra orizzontale */
 .horizontal-bar {
+    width: 80%;
+    height: 4px;
+    background-color: #c19a6b;
+    margin: 40px auto;
+}
+
+/* Sezioni */
+.about-section {
+    display: flex;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.about-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-image {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.about-image img {
     width: 100%;
-    height: 14px; /* Altezza della barra */
-    background-color: #c19a6b; /* Colore della barra */
-    margin: 40px auto; /* Margine sopra e sotto */
-}                                          
-
-/* Image 1 */
-.hero-banner {
-    background-image: url('images/lavori/finestra7.jpeg'); /* Percorso dell'immagine */
-    background-size: 550px; /* Adatta l'immagine all'area */
-    background-position: left; /* Centra l'immagine */
-    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
-    padding: 100px; /* Spazio interno per il contenuto */
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-.hero-banner h2 {
-    margin: 50; /* Rimuovi il margine predefinito */
-    padding-left: 600px; /* Aggiungi spazio tra immagine e testo */
-    color: #333; /* Colore del testo */
+.about-image img:hover {
+    transform: scale(1.05);
 }
 
-/* Image 2 */
-.hero-banner2 {
-    background-image: url('images/lavori/tenda2.jpeg'); /* Percorso dell'immagine */
-    background-size: 600px; /* Adatta l'immagine all'area */
-    background-position: right; /* Centra l'immagine */
-    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
-    padding: 30px; /* Spazio interno per il contenuto */
+.about-text {
+    flex: 1;
+    padding: 0 40px;
+    text-align: left;
 }
 
-.hero-banner2 h2 {
-    margin: 50; /* Rimuovi il margine predefinito */
-    padding-right: 650px; /* Aggiungi spazio tra immagine e testo */
-    color: #333; /* Colore del testo */
-}
-/* Image 3 */
-.hero-banner3 {
-    background-image: url('images/lavori/finestra5.jpeg'); /* Percorso dell'immagine */
-    background-size: 500px; /* Adatta l'immagine all'area */
-    background-position: left; /* Centra l'immagine */
-    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
-    padding: 100px; /* Spazio interno per il contenuto */
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
 }
 
-.hero-banner3 h2 {
-    margin: 50; /* Rimuovi il margine predefinito */
-    padding-left: 550px; /* Aggiungi spazio tra immagine e testo */
-    color: #333; /* Colore del testo */
+/* Call to Action */
+.cta-section {
+    margin-top: 40px;
 }
 
-/* Barra orizzontale 2 */
-.horizontal-bar2 {
-    width: 100%;
-    height: 14px; /* Altezza della barra */
-    background-color: #c19a6b; /* Colore della barra */
-    margin: 40px auto; /* Margine sopra e sotto */
+.cta-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
 }
+
+.cta-button {
+    background-color: #c19a6b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #a87c4f;
+}
+
 
 
                         /*   S    E    Z    I    O    N   E   -   I      N   O   S   T   R   I     L   A   V   O   R   I    */
@@ -417,3 +451,43 @@ form button:hover {
         font-size: 20px;
     }
 }
+
+
+                           /*   S    E    Z    I    O    N   E   -     H   O   M   E    */
+
+/* Sezione Home */
+/* Stile per i blocchi con le frasi e i bottoni */
+.home-cta {
+    margin-bottom: 30px;  /* Aggiunge uno spazio tra i blocchi */
+    margin-top: 20px;
+}
+
+.home-cta p {
+    font-size: 1.2rem;  /* Dimensione del testo delle frasi */
+    color: #333;  /* Colore del testo */
+    margin-bottom: 30px;  /* Spazio sotto la frase */
+}
+
+.home-cta .cta-button {
+    background-color: #c19a6b;  /* Colore del bottone */
+    color: white;  /* Colore del testo del bottone */
+    padding: 10px 20px;  /* Spazio interno al bottone */
+    border-radius: 5px;  /* Angoli arrotondati */
+    text-decoration: none;  /* Rimuove la sottolineatura */
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.home-cta .cta-button:hover {
+    background-color: #a87c4f;  /* Cambia colore quando il mouse passa sopra */
+}
+
+.home-image {
+    width: 60%; /* Occupa metà della larghezza disponibile */
+    height: auto; /* Mantiene le proporzioni originali dell'immagine */
+    display: block;
+    margin: 20px auto; /* Centra l'immagine orizzontalmente e aggiunge margini sopra e sotto */
+    border-radius: 15px; /* Arrotonda gli angoli */
+    margin-bottom: 80px;
+}
+
